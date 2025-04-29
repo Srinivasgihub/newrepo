@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "repromlpipelines"
+		},
+		"AzureMLService1_properties_typeProperties_subscriptionId": {
+			"value": "746fc7b0-e7b5-4370-9a4c-d7c0c4013c0b"
+		},
+		"AzureMLService1_properties_typeProperties_resourceGroupName": {
+			"value": "Interview-RG"
+		},
+		"AzureMLService1_properties_typeProperties_mlWorkspaceName": {
+			"value": "MLWorkspaceforreprov"
+		}
+	}
+}
