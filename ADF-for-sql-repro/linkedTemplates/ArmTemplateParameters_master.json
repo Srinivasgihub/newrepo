@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-for-sql-repro"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureFileStorage1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabasedestintion_password": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalytics_finone_odbc_connectionString": {
+			"value": ""
+		},
+		"Stampdocblob_connectionString": {
+			"value": ""
+		},
+		"Stampdocfileshare_password": {
+			"value": ""
+		},
+		"AzureFileStorage1_properties_typeProperties_host": {
+			"value": "\\\\reprostgfordelfile.file.core.windows.net\\fileshare"
+		},
+		"AzureFileStorage1_properties_typeProperties_userId": {
+			"value": "Azure\\reprostgfordelfile"
+		},
+		"AzureMLService1_properties_typeProperties_subscriptionId": {
+			"value": "746fc7b0-e7b5-4370-9a4c-d7c0c4013c0b"
+		},
+		"AzureMLService1_properties_typeProperties_resourceGroupName": {
+			"value": "Interview-RG"
+		},
+		"AzureMLService1_properties_typeProperties_mlWorkspaceName": {
+			"value": "MLWorkspaceforreprov"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "serverforreprosrinidhi.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "srinivasdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "srinivas"
+		},
+		"AzureSqlDatabasedestintion_properties_typeProperties_server": {
+			"value": "serverforreprosrinidhi.database.windows.net"
+		},
+		"AzureSqlDatabasedestintion_properties_typeProperties_database": {
+			"value": "srinivasdb"
+		},
+		"AzureSqlDatabasedestintion_properties_typeProperties_userName": {
+			"value": "srinivas"
+		},
+		"Stampdocfileshare_properties_typeProperties_host": {
+			"value": "\\\\spampeddoc.file.core.windows.net\\stamped-doc-push"
+		},
+		"Stampdocfileshare_properties_typeProperties_userId": {
+			"value": "Azure\\spampeddoc"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
