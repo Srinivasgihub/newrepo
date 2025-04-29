@@ -1,0 +1,7 @@
+{
+	"name": "devirorctoazr",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Development IR created for Oracle to AzureBLOB Connection"
+	}
+}

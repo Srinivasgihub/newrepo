@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline2",
 	"properties": {
 		"activities": [
 			{
@@ -16,27 +16,37 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "ds_del",
-						"type": "DatasetReference"
+						"referenceName": "Binary1",
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.filename",
+								"type": "Expression"
+							}
+						}
 					},
 					"logStorageSettings": {
 						"linkedServiceName": {
 							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
-						},
-						"path": "deletedfiles"
+						}
 					},
 					"enableLogging": true,
 					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
+						"type": "AzureFileStorageReadSettings",
 						"recursive": true,
 						"enablePartitionDiscovery": false
 					}
 				}
 			}
 		],
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
-		"lastPublishTime": "2025-04-22T05:39:02Z"
+		"lastPublishTime": "2025-04-22T06:14:38Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

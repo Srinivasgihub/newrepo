@@ -1,0 +1,17 @@
+{
+	"name": "AzureSynapseAnalytics_finone_odbc",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Used for connecting Synapse DWH to FinnOne via ODBC",
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sqldw91.database.windows.net;initial catalog=SQL_DW;user id=sqldwadmin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0ZmVjYmU2MS02OTdkLTRmZGItOGNiNy1jZWQzZWQ1MjU1MGUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "devirorctoazr",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

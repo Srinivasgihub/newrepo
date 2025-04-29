@@ -1,0 +1,20 @@
+{
+	"name": "ADF-for-sql-repro",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "6628b61a-631c-4671-b1da-e17b240290ac",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3",
+		"userAssignedIdentities": {
+			"/subscriptions/746fc7b0-e7b5-4370-9a4c-d7c0c4013c0b/resourcegroups/Interview-RG/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassignedmanagedidentityfornewadf": {
+				"clientId": "24de01cf-2e4b-49eb-84fe-42f494ef7fe1",
+				"principalId": "c89e2583-b098-4178-a3c9-0533ce490131"
+			}
+		}
+	}
+}

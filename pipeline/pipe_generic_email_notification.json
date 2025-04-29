@@ -1,0 +1,55 @@
+{
+	"name": "pipe_generic_email_notification",
+	"properties": {
+		"activities": [
+			{
+				"name": "email_to_receipients - default",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://prod-10.centralindia.logic.azure.com:443/workflows/27d7921a1aa746fbb5cd2b9e8b19096f/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=YeuMeU7qpWzRTMKpdS9LPshyb5MjAseg42M2TmpwWvk",
+					"connectVia": {
+						"referenceName": "devirorctoazr",
+						"type": "IntegrationRuntimeReference"
+					},
+					"body": {
+						"value": "@concat('{\n \"EmailTo\":\"',pipeline().parameters.EmailTo,'\",\n\n \"title\":\"',pipeline().parameters.title,'\",\n  \n \"Message\":\"',pipeline().parameters.Message,'\",\n\n \"EmailCc\": \"',pipeline().parameters.EmailCc,'\",\n\n \"EmailBcc\":\"',pipeline().parameters.EmailBcc,'\"\n}')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"EmailTo": {
+				"type": "string"
+			},
+			"EmailCc": {
+				"type": "string"
+			},
+			"EmailBcc": {
+				"type": "string"
+			},
+			"Message": {
+				"type": "string"
+			},
+			"title": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "BI INTERNAL"
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-04-24T05:56:25Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
