@@ -1,0 +1,7 @@
+{
+	"name": "AzureBlobStorage251",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/746fc7b0-e7b5-4370-9a4c-d7c0c4013c0b/resourceGroups/ADF-PROD/providers/Microsoft.Storage/storageAccounts/storageaccforwayne",
+		"groupId": "blob"
+	}
+}
